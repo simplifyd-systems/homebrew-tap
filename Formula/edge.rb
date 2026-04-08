@@ -5,12 +5,12 @@
 class Edge < Formula
   desc "Simplifyd Cloud CLI — manage cloud resources from the terminal"
   homepage "https://github.com/simplifyd-systems/cloud-cli"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
-    url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.10/edge_0.1.10_macOS_all.tar.gz"
-    sha256 "65f1ae428edc69b8ce75f57582306729eedb64817a489ef304e9e5f24a175b7e"
+    url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.11/edge_0.1.11_macOS_all.tar.gz"
+    sha256 "aad42a25171fc5622742c8d4cb91a0c00ec8d27d536249e6bb964f1b8ea36b51"
 
     define_method(:install) do
       bin.install "edge"
@@ -19,15 +19,15 @@ class Edge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.10/edge_0.1.10_Linux_x86_64.tar.gz"
-      sha256 "2aac104977a62b0f36b7f93991b2a8e9c4a110ef039cafd2213ce35f297043b8"
+      url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.11/edge_0.1.11_Linux_x86_64.tar.gz"
+      sha256 "12da753e091a1d05c60cbfb32723a689f5cc2989fb4c830862766908377640eb"
       define_method(:install) do
         bin.install "edge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.10/edge_0.1.10_Linux_arm64.tar.gz"
-      sha256 "3e91e194ad60f1a9cb4872c058fa0a5cc0b265d638ba30c3288cc55da217c1b4"
+      url "https://github.com/simplifyd-systems/cli/releases/download/v0.1.11/edge_0.1.11_Linux_arm64.tar.gz"
+      sha256 "2dd3c279c671ffab05305be377dbb98fa4875f46abeb871ef2dc4913ac5bc5c6"
       define_method(:install) do
         bin.install "edge"
       end
