@@ -35,6 +35,6 @@ class Edge < Formula
   end
 
   test do
-    system "#{bin}/edge", "--version"
+    system "#{bin}/edge", "version"
   end
 end
